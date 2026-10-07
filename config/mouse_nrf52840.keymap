@@ -1,17 +1,17 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            // Позиции 0-14: буквы A-O, позиция 15: загрузчик (&bootloader)
             bindings = <
-                &kp A  &kp B  &kp C  &kp D
-                &kp E  &kp F  &kp G  &kp H
-                &kp I  &kp J  &kp K  &kp L
-                &kp M  &kp N  &kp O  &bootloader
+                &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp MB4
+                &mkp MB5   &kp F      &kp G      &kp H
+                &kp I      &kp J      &kp K      &kp L
+                &kp M      &kp N      &kp O      &bootloader
             >;
         };
     };
